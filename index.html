@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Image Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>Responsive Image Gallery</h1>
+
+  <!-- Category Buttons -->
+  <div class="categories">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="nature">Nature</button>
+    <button data-filter="city">City</button>
+    <button data-filter="people">People</button>
+  </div>
+
+  <!-- Gallery Container -->
+  <div class="gallery">
+    <div class="gallery-item" data-category="nature">
+      <img src="images/images.jpg" alt="Nature 1" />
+    </div>
+    <div class="gallery-item" data-category="city">
+      <img src="images/pexels-peng-liu-45946-169647.jpg" alt="City 1" />
+    </div>
+    <div class="gallery-item" data-category="people">
+      <img src="images/diverse-group-people-socializing-casual-260nw-2541238159.webp" alt="People 1" />
+    </div>
+    <!-- Add more images similarly, with categories -->
+  </div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox hidden">
+    <button id="closeBtn" class="close-btn">&times;</button>
+    <button id="prevBtn" class="nav-btn prev-btn">&#10094;</button>
+    <img id="lightboxImg" src="" alt="Expanded view" />
+    <button id="nextBtn" class="nav-btn next-btn">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
